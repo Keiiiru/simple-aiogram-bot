@@ -8,3 +8,4 @@ logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=os.getenv("TOKEN"), parse_mode=ParseMode.HTML)
 dp = Dispatcher()
+admin_id = int(os.getenv("ADMIN"))
