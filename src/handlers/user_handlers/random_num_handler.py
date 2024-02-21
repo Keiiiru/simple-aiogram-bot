@@ -16,7 +16,6 @@ async def random_number_message(m: types.Message):
         "Click the button, if u wanna get a random number",
         reply_markup=builder.as_markup(),
     )
-    await m.answer()
 
 
 @dp.callback_query(F.data == "random_value")
